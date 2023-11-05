@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 1440px;
+    height: 986px;
+    background: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    width: 1440px;
+    height: 118px;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 33px;
+    margin-right: 25px;
+  }
+  
+  .nav div {
+    text-align: center;
+    color: #5D5A88;
+    font-size: 18px;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  .resources {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .resources div:last-child {
+    width: 11.67px;
+    height: 5.83px;
+    border: 1.40px #211F54 solid;
+  }
+  
+  .login {
+    padding: 18px 24px;
+    background: white;
+    border-radius: 30px;
+    border: 1px #D4D2E3 solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-right: 24px;
+  }
+  
+  .login div {
+    text-align: center;
+    color: #5D5A88;
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  .get-started {
+    padding: 18px 24px;
+    background: #5D5A88;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .get-started div {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  
+  .main {
+    width: 1220px;
+    height: 720px;
+    background: #9795B5;
+    border-radius: 16px;
+    position: relative;
+  }
+  
+  .card {
+    width: 123px;
+    height: 108px;
+    background: #ADABC3;
+    border-radius: 16px;
+    position: absolute;
+    left: 548.50px;
+    top: 306px;
+  }
+  
+  .circle {
+    width: 123px;
+    height: 108px;
+    background: #ADABC3;
+    border-radius: 50%;
+    position: absolute;
+    left: 548.50px;
+    top: 306px;
+  }
+  
