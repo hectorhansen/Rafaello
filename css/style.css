@@ -1,104 +1,110 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
-    width: 1440px;
-    height: 986px;
-    background: white;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header {
-    width: 1440px;
-    height: 118px;
-    background: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 33px;
-    margin-right: 25px;
-  }
-  
-  .nav div {
-    text-align: center;
-    color: #5D5A88;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    font-family: DM Sans;
+    font-style: normal; 
     font-weight: 400;
     line-height: 18px;
-  }
-  
-  .resources {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .resources div:last-child {
-    width: 11.67px;
-    height: 5.83px;
-    border: 1.40px #211F54 solid;
-  }
-  
-  .login {
-    padding: 18px 24px;
-    background: white;
-    border-radius: 30px;
-    border: 1px #D4D2E3 solid;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    margin-right: 24px;
-  }
-  
-  .login div {
-    text-align: center;
     color: #5D5A88;
-    font-size: 16px;
-    font-family: DM Sans;
-    font-weight: 400;
-    line-height: 18px;
+}
+
+  .header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
-    
-  .main {
-    width: 1220px;
-    height: 720px;
-    background: #9795B5;
-    border-radius: 16px;
-    position: relative;
+
+  .nav{
+    display: flex;
+    justify-items: center;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 0rem 2rem 0rem 2rem;
+    flex-wrap: wrap;
   }
-  
-  .card {
-    width: 123px;
-    height: 108px;
-    background: #ADABC3;
-    border-radius: 16px;
-    position: absolute;
-    left: 548.50px;
-    top: 306px;
-  }
-  
-  .circle {
-    width: 123px;
-    height: 108px;
-    background: #ADABC3;
-    border-radius: 50%;
-    position: absolute;
-    left: 548.50px;
-    top: 306px;
-  }
-  
+
+  .WhatsApp_btn {
+    display: inline-block;
+    /* background-color: #128C7E; Cor oficial do WhatsApp */
+    color: #128C7E;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-color: #128C7E;
+    border-radius: 30px;
+    border: solid 1px;
+}
+
+.WhatsApp_btn:hover {
+    background-color: #25d366; /* Cor de realce no hover */
+    color: aliceblue;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  height: 70vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-position: center;
+  background-image: url('/assets/img/banner.jpg');
+  background-size: cover; /* Isso redimensiona a imagem para cobrir todo o elemento */
+  border-radius: 30px;
+}
+
+.banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 30px;
+}
+
+h1{
+  z-index: 2;
+  position: relative;
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+}
+
+h2{
+  z-index: 2;
+  position: relative;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+button{
+  z-index: 2;
+  position: relative;
+  background-color: rgba(26, 26, 26, 0.5);
+  border-color: aliceblue;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+button:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  border-color: black;
+}
