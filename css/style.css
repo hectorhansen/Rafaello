@@ -27,6 +27,29 @@
     flex-wrap: wrap;
   }
 
+  .nav a {
+    text-decoration: none;
+    position: relative; /* Permite posicionar o sublinhado */
+    color: #000; /* Cor do texto */
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Controla a distância da linha em relação ao texto */
+    width: 100%;
+    height: 3px; /* Altura da linha */
+    background-color: #5D5A88; /* Cor da linha */
+    transform: scaleX(0); /* Inicialmente, a linha não é visível */
+    transform-origin: center;
+    transition: transform 0.2s; /* Efeito de transição suave */
+  }
+  
+  .nav a:hover::after {
+    transform: scaleX(1); /* A linha é visível ao passar o mouse */
+  }
+
   .WhatsApp_btn {
     display: inline-block;
     /* background-color: #128C7E; Cor oficial do WhatsApp */
@@ -92,6 +115,15 @@ h2{
   margin-top: 1rem;
 }
 
+h3{
+  color: #5D5A88;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 button{
   z-index: 2;
   position: relative;
@@ -107,4 +139,58 @@ button:hover{
   background-color: rgba(255, 255, 255, 1);
   color: black;
   border-color: black;
+}
+
+.flex_response {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kpi-section {
+  margin-right: auto;
+  margin-left: auto;
+  width:80%;
+}
+
+.metric_box {
+  margin-bottom: 30px;
+  width:15%;
+  text-align: center;
+  margin: auto;
+}
+
+.kpi {
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+}
+
+.kpi-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem 0;
+}
+
+.text-align {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.kpi-value {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  .flex_response {
+    flex-direction: column;
+  }
+
+  .metric_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
