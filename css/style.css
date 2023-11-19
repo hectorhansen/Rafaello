@@ -268,12 +268,6 @@ h3{
   text-align: left;
 }
 
-.cta_footer{
-}
-
-.btn_cta_footer{
-}
-
 
 
 @media (max-width: 700px) {
@@ -301,9 +295,7 @@ h3{
     margin: auto;
   }
 
-  .btn_cta_footer{
-    margin-bottom: 50px;
-  }
+
 
   .h3_cta{
     line-height: 2rem;
@@ -338,11 +330,6 @@ h3{
     padding: 1vh 15vh;
     margin: auto;
   }
-
-  .btn_cta_footer{
-    margin-bottom: 50px;
-  }
-
 
 }
 
