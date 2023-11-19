@@ -1,25 +1,41 @@
 function animateValue(start, duration) {
+  let startTimestamp = null;
+  let kpiValue = document.querySelectorAll('span.kpi-value');
 
-    let startTimestamp = null;
-    var kpiValue = document.querySelectorAll('span.kpi-value');
-  
-    kpiValue.forEach(element=> {
-      let end = parseInt(element.innerHTML)
-      let steps = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-  
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        element.innerHTML = Math.floor(progress * (end - start) + start);
-        console.log(progress * (end - start))
-  
-        if (progress < 1) {
-          window.requestAnimationFrame(steps);
-        }
-      };
+  function animate(element) {
+    let end = parseInt(element.innerHTML);
+    let steps = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      element.innerHTML = Math.floor(progress * (end - start) + start);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(steps);
+      }
+    };
+
     window.requestAnimationFrame(steps);
-    })
-  };
+  }
 
-  window.addEventListener("DOMContentLoaded", function () {
-    animateValue(0, 5000)
-  })
+  let observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Element is now in the viewport
+          animate(entry.target);
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    },
+    { threshold: 0.5 } // Adjust the threshold as needed
+  );
+
+  kpiValue.forEach((element) => {
+    observer.observe(element);
+  });
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+  animateValue(0, 2000);
+});
