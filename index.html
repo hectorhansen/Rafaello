@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700&display=swap" rel="stylesheet">
@@ -13,86 +13,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-          <img class="logo" src="/assets/img/RAFAELLO_GROUP_LOGO.svg" width="150px">
-          <nav >
-            <ul class="nav">
-              <li class="item"><a href="#">Home</a></li>
-              <li class="item"><a href="#">About</a></li>
-              <li class="item"><a href="#">Resourses</a></li>
-              <li class="item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="WhatsApp_btn">WhatsApp</div>
-        </div>
-        <div class="banner">
-          <div class="tittlebanner"><h1>In the realm of hard hats and steel,<br>We turn dreams into structures.</h1></div>
-          <div class="subtittle"><h2>Where We Redefine Spaces Through Innovative Structural Solutions and Unparalleled Design Excellence.</h2></div>
-          <div class="banner_cta">
-            <button class="cta_banner">Get in Touch with Us Today ></button>
-          </div>
-        </div>
-        <div class="kpi-section">
-          <div>
-            <div class="text-align">
-              <h3>Our numbers</h3>
-            </div>
-          </div>
-          <div class="flex_response kpi">
-            <div class="metric_box">
-              <div><span class="kpi-value">305</span></div>
-              <div><p class="kpi-title">Renovations</p></div>
-            </div>
-            <div class="metric_box">
-              <div><span class="kpi-value">8</span></div>
-              <div><p class="kpi-title">Cities</p></div>
-            </div>
-            <div class="metric_box">
-              <div><span class="kpi-value">116</span></div>
-              <div><p class="kpi-title">Employers</p></div>
-            </div>
-            <div class="metric_box">
-              <div><span class="kpi-value">97.3</span><span>%</span></div>
-              <div><p class="kpi-title">Satisfaction</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="our_job">
-          <h3>Our Jobs</h3>
-          <div class="cards_space">
-            <div class='card card1'>
-              <p class="card_titlle">Titulo</p>
-              <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptatibus saepe error, repudiandae voluptatem voluptas.</p>
-            </div>
-            <div class='card card2'>
-              <p class="card_titlle">Titulo</p>
-              <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptatibus saepe error, repudiandae voluptatem voluptas.</p>
-            </div>
-            <div class='card card3'>
-              <p class="card_titlle">Titulo</p>
-              <p class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptatibus saepe error, repudiandae voluptatem voluptas.</p>
-            </div>
-          </div>
-        </div>
-        <div class="cta_section">
-          <div class="cta_footer"><h3 class="h3_cta">Ready to Transform Your Space?<br><br>Request a Quote on WhatsApp Now!</h3></div>
-          <div class="btn_cta_footer">
-            <button class="WhatsApp_btn">Request Quote on WhatsApp ></button>
-          </div>
-        </div>
-        <div class="footer">
-          <img src="/assets/img/RAFAELLO_GROUP_LOGO.svg" width="150px">
-          <nav >
-            <ul class="nav">
-              <li class="item"><a href="#">Home</a></li>
-              <li class="item"><a href="#">About</a></li>
-              <li class="item"><a href="#">Resourses</a></li>
-              <li class="item"><a href="#">Pricing</a></li>
-              <li class="item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="WhatsApp_btn">WhatsApp</div>
-        </div>
+      <div id="headerContainer"></div>
+      <div id="BannerContainer"></div>
+      <div id="KpiContainer"></div>
+      <div id="OurjobsConteiner"></div>
+      <div id="CtaConteiner"></div>
+      <div id="footerContainer"></div>
     </div>
 </body>
 </html>

@@ -1,3 +1,21 @@
+import { createBanner } from './banner.js';
+import { createCta } from './cta.js';
+import { createFooter } from './footer.js';
+import { createHeader } from './header.js';
+import { initializeKPI } from './kpi.js';
+import { createOurjobs } from './ourjobs.js';
+
+
+window.addEventListener("DOMContentLoaded", function () {
+  animateValue(0, 2000);
+  createBanner();
+  createCta();
+  createFooter();
+  createHeader();
+  initializeKPI();
+  createOurjobs();
+});
+
 function animateValue(start, duration) {
   let startTimestamp = null;
   let kpiValue = document.querySelectorAll('span.kpi-value');
@@ -35,7 +53,3 @@ function animateValue(start, duration) {
     observer.observe(element);
   });
 }
-
-window.addEventListener("DOMContentLoaded", function () {
-  animateValue(0, 2000);
-});
