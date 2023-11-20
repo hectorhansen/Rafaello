@@ -8,12 +8,14 @@ import { createOurjobs } from './ourjobs.js';
 
 window.addEventListener("DOMContentLoaded", function () {
   animateValue(0, 2000);
-  createBanner();
-  createCta();
-  createFooter();
-  createHeader();
-  initializeKPI();
-  createOurjobs();
+  
+    createBanner();
+    createCta();
+    initializeKPI();
+    createOurjobs();
+    createCta();
+    createFooter();
+    createHeader();
 });
 
 function animateValue(start, duration) {
