@@ -3,7 +3,7 @@ export function createFooter() {
   
     const footerContainerValue = `
     <div class="footer">
-    <img src="/assets/img/RAFAELLO_GROUP_LOGO.svg" width="150px">
+    <img src="/assets/img/RAFAELLO_GROUP_LOGO.svg" width="100px">
     <nav >
       <ul class="nav">
       <li class="item"><a href="./index.html">Home</a></li>
