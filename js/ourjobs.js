@@ -1,4 +1,4 @@
-export function createOurjobs() {
+function createOurjobs() {
     const OurjobsConteiner = document.getElementById("OurjobsConteiner");
   
     const OurjobsConteinerValue = `

@@ -1,4 +1,4 @@
-export function createFooter() {
+function createFooter() {
     const footerContainer = document.getElementById("footerContainer");
   
     const footerContainerValue = `

@@ -1,4 +1,4 @@
-export function createCta() {
+function createCta() {
     const CtaConteiner = document.getElementById("CtaConteiner");
   
     const CtaConteinerValue = `

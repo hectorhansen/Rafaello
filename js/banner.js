@@ -1,4 +1,4 @@
-export function createBanner() {
+function createBanner() {
   if (window.location.pathname === '/index.html' || window.location.pathname === '/') {  
   const BannerContainer = document.getElementById("BannerContainer");
   

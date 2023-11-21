@@ -1,19 +1,25 @@
 import { animateValue } from './animatedkpi.js';
-import { createBanner } from './banner.js';
-import { createCta } from './cta.js';
-import { createFooter } from './footer.js';
-import { createHeader } from './header.js';
-import { initializeKPI } from './kpi.js';
-import { createOurjobs } from './ourjobs.js';
 
 window.addEventListener("DOMContentLoaded", function () {
   animateValue(0, 2000);
-  createBanner();
-  createCta();
-  initializeKPI();
-  createOurjobs();
-  createCta();
-  createFooter();
-  createHeader();
-
 });
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_7phwhso';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Sent!';
+      }, (err) => {
+        btn.value = 'Error, try again!';
+        alert(JSON.stringify(err));
+      });
+  });

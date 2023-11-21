@@ -1,4 +1,4 @@
-export function initializeKPI() {
+function initializeKPI() {
     const KpiContainer = document.getElementById("KpiContainer");
   
     const KpiContainerValue = `

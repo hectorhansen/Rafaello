@@ -1,5 +1,5 @@
 // header.js
-export function createHeader() {
+function createHeader() {
     const headerContainer = document.getElementById("headerContainer");
   
     const headerContentValue = `

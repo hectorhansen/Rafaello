@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="module" src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('GUNOTzl_Rhy3Iyfun')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700&display=swap" rel="stylesheet">
@@ -14,8 +16,41 @@
 <body>
     <div class="container">
       <div id="headerContainer"></div>
-      <div id="CtaConteiner"></div>
+      <div class="formContact">
+        <div class="contactus">
+          <p>Contact Us</p>
+          <h4 class="CTAContact">Get in touch today</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit earum nisi quae illo exercitationem molestias est tempore totam expedita fuga!</p>
+          <p class="mail"><img src="assets/img/Email.svg" width="20px" height="20px">contact@rafaellogroup.ca</p>
+          <p class="phone"><img src="assets/img/Phone.svg" width="20px" height="20px">+1 437 262-2444</p>
+          <p class="adress"><img src="assets/img/pin.svg" width="20px" height="30px">Downtown ST 2452 - Toronto - ON - Canada</p>
+        </div>
+        <div class="formSubmit">
+          <form id="form" class="formArea">
+            <div class="field">
+              <label for="from_name"></label>
+              <input type="text" name="from_name" placeholder="Name Lastname" id="from_name" class="inputs">
+            </div>
+            <div class="field">
+              <label for="from_email"></label>
+              <input type="text" name="from_email" placeholder="example@mail.ca" id="from_email" class="inputs">
+            </div>
+            <div class="field">
+              <label for="from_phone"></label>
+              <input type="text" name="from_phone" placeholder="+1 123 123-1234" id="from_phone" class="inputs">
+            </div>
+            <div class="field">
+              <label for="message"></label>
+              <input type="text" name="message" placeholder="Your message here!" id="message" class="inputs">
+            </div>          
+            <input type="submit" id="button" value="Send Email" >
+          </form>
+        </div>
+      </div>
       <div id="footerContainer"></div>
     </div>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
